@@ -26,9 +26,6 @@
     nav{
         z-index:9999;
     }
-    section{
-        height:90vh;
-    }
 
     .title{
         font-size: 2.5rem;
@@ -40,8 +37,12 @@
         opacity: 0.03;
         background-size: cover;
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         overflow: hidden;
+    }
+    .lottie-mobile{
+        width:80%;
+        height: 80%;
     }
 
 /* Navbar */
@@ -143,9 +144,20 @@ position: absolute;
     .title{
         text-align: left;
     }
-
+    .lottie-mobile{
+        width: 100%;
+        height: 100%;
+    }
     p{
         text-align: justify;
+        font-size: 1.2rem;
+    }
+    #contactez-nous p{
+        font-size:2rem;
+    }
+    #contactez-nous h2{
+        font-size: 4rem;
+        margin-bottom: 0.5em;
     }
     }
     /* End of Breackpoint min 1024px */
