@@ -14,7 +14,6 @@
     h1{
         font-family: 'Bebas Neue', cursive;
         font-weight: 800;
-        font-size:8rem;
     }
     h2{
         font-family: 'Bebas Neue', cursive;
@@ -22,9 +21,27 @@
     }
     p{
         font-family: 'Roboto', sans-serif;
+        text-align: center;
     }
     nav{
         z-index:9999;
+    }
+    section{
+        height:90vh;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        text-align: center;
+        margin:2em 0 1em 0;
+    }
+    .background-stripped{
+        background-image:url("../img/background-stripped.png");
+        opacity: 0.03;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
 /* Navbar */
@@ -56,8 +73,7 @@ max-width:40%
     height: 90vh;
     width: 100%;
     z-index:1;
-    overflow: hidden;
-   
+    overflow: hidden; 
 }
 .ken-burns-bg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/creuse.jpg");
@@ -67,7 +83,6 @@ max-width:40%
   overflow: hidden;
   -webkit-animation: burns 150s ease-out both;
   animation-iteration-count: infinite;
-
 }
 .hero-scroll{
     position:absolute;
@@ -85,12 +100,15 @@ position: absolute;
   text-align: center;
   background-color: rgba(255,255,255,.75);
   box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
-  padding:1em 5em;
+  padding:1em 4em;
   border-radius: 4px;
 }
 .hero-title h2{
     border-top:2px solid black;
     padding-top:0.2em;
+}
+.hero-title h1{
+    font-size:10rem;
 }
 /* Ken Burns effect under the hero section*/
 @-webkit-keyframes burns {
@@ -120,3 +138,14 @@ position: absolute;
 }
 }
 /* End of Breackpoint max 800px */
+/* Breackpoint min 1024px */
+@media screen and (min-width:1024px){
+    .title{
+        text-align: left;
+    }
+
+    p{
+        text-align: justify;
+    }
+    }
+    /* End of Breackpoint min 1024px */
