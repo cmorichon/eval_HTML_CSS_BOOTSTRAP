@@ -39,10 +39,15 @@
         width: 100%;
         min-height: 100%;
         overflow: hidden;
+        
     }
     .lottie-mobile{
         width:80%;
         height: 80%;
+    }
+    .icone-reduce{
+        width:30%;
+        padding:1em;
     }
 
 /* Navbar */
@@ -74,7 +79,7 @@ max-width:40%
     height: 90vh;
     width: 100%;
     z-index:1;
-    overflow: hidden; 
+    overflow: hidden;
 }
 .ken-burns-bg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/creuse.jpg");
