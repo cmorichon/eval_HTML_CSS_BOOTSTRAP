@@ -21,11 +21,11 @@
     }
     .background-stripped{
         background-image:url("../img/background-stripped.png");
-        opacity: 0.03;
-        background-size: cover;
+        background-size: auto;
         width: 100%;
-        min-height: 100%;
+        height: 100%;
         overflow: hidden; 
+        background-repeat: repeat;
     }
     .lottie-mobile{
         width:80%;
