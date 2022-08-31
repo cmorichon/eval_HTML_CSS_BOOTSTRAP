@@ -1,177 +1,213 @@
-/* Global CSS */
-    h1{
-        font-family: 'Bebas Neue', cursive;
-        font-weight: 800;
-    }
-    h2{
-        font-family: 'Bebas Neue', cursive;
-        font-weight: 500;
-    }
-    p{
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-    }
-    nav{
-        z-index:9999;
-    }
-    .title{
-        font-size: 2.5rem;
-        text-align: center;
-        margin:2em 0 1em 0;
-    }
-    .title-sm{
-        font-size: 1.8rem;
-        text-align: center;
-        margin:1em 0 1em 0;
-    }
-    .title-xs{
-        font-size: 1.2rem;
-        text-align: center;
-        margin:1em 0 1em 0;
-    }
-    .background-stripped{
-        background-image:url("../img/background-stripped.png");
-        background-size: auto;
-        width: 100%;
-        height: 100%;
-        overflow: hidden; 
-        background-repeat: repeat;
-    }
-    .lottie-mobile{
-        width:80%;
-        height: 80%;
-    }
-    .icone-reduce{
-        width:30%;
-        padding:1em;
-    }
-    
+/* CSS Mobile First */
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+nav {
+    z-index: 9999;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2em 0 1em 0;
+}
+
+.title-sm {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.title-xs {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.background-stripped {
+    background-image: url("../img/background-stripped.png");
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: repeat;
+}
+
+.lottie-mobile {
+    width: 80%;
+    height: 80%;
+}
+
+.icone-reduce {
+    width: 30%;
+    padding: 1em;
+}
+
 
 /* Navbar */
-.shadow-nav{
+.shadow-nav {
     box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 15%)
 }
-.img-logo{
-    max-width:100px;
+
+.img-logo {
+    max-width: 100px;
 }
-.icon-nav img{
+
+.icon-nav img {
     max-width: 40px;
-    padding:0.2em;
-    transition:200ms;  
+    padding: 0.2em;
+    transition: 200ms;
 }
-.icon-nav img:hover{
-    transform:scale(1.04);
-    transition:200ms;
+
+.icon-nav img:hover {
+    transform: scale(1.04);
+    transition: 200ms;
 }
-.icon-footer img{
+
+.icon-footer img {
     max-width: 80px;
-    padding:0.2em;
-    transition:200ms;  
+    padding: 0.2em;
+    transition: 200ms;
 }
-.icon-footer img:hover{
-    transform:scale(1.04);
-    transition:200ms;
+
+.icon-footer img:hover {
+    transform: scale(1.04);
+    transition: 200ms;
 }
-.nav-item a{
+
+.nav-item a {
     font-family: 'Bebas Neue', cursive;
     font-size: 1em;
     font-weight: 600;
 }
+
 /* End of Navbar */
 
 /* Hero section */
-.hero-section{
+.hero-section {
     position: absolute;
     height: 90vh;
     width: 100%;
-    z-index:1;
+    z-index: 1;
     overflow: hidden;
 }
-.ken-burns-bg{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/creuse.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-animation: burns 150s ease-out both;
-  animation-iteration-count: infinite;
+
+.ken-burns-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/creuse.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-animation: burns 150s ease-out both;
+    animation-iteration-count: infinite;
 }
-.hero-scroll{
-    position:absolute;
-    z-index:99;
-    bottom:0;
-    left:50%;
+
+.hero-scroll {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-.hero-title{
-position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 99;
-  text-align: center;
-  background-color: rgba(255,255,255,.75);
-  box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
-  padding:1em 4em;
-  border-radius: 4px;
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 99;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5);
+    padding: 1em 4em;
+    border-radius: 4px;
 }
-.hero-title h2{
-    border-top:2px solid black;
-    padding-top:0.2em;
+
+.hero-title h2 {
+    border-top: 2px solid black;
+    padding-top: 0.2em;
 }
-.hero-title h1{
-    font-size:5rem;
+
+.hero-title h1 {
+    font-size: 5rem;
 }
+
 /* Ken Burns effect under the hero section*/
 @-webkit-keyframes burns {
     0% {
         transform: scale(1);
         transform-origin: 50% 50%;
-   }
+    }
+
     100% {
         transform: scale(1.25);
         transform-origin: 50% 50%;
-   }
+    }
 }
+
 /* End of ken Burns */
 /* End of Hero Section */
 
-/* Breackpoint min 1024px */
-@media screen and (min-width:1024px){
-    .img-logo{
-        max-width:40%
+/* Breackpoint min 990px */
+@media screen and (min-width:990px) {
+    .img-logo {
+        max-width: 40%
     }
-    .nav-item a{
+
+    .nav-item a {
         font-size: 1.3em;
     }
-    .title{
+
+    .title {
         text-align: left;
         font-size: 3em;
     }
-    .title-sm, .title-xs{
+
+    .title-sm,
+    .title-xs {
         text-align: left;
     }
-    .icon-nav img{
+
+    .icon-nav img {
         max-width: 40px;
-        padding:0.2em;
-        transition:200ms;
+        padding: 0.2em;
+        transition: 200ms;
     }
-    .hero-title h1{
-        font-size:10rem;
+
+    .hero-title h1 {
+        font-size: 10rem;
     }
-    .lottie-mobile{
+
+    .lottie-mobile {
         width: 100%;
         height: 100%;
     }
-    p{
+
+    p {
         text-align: justify;
         font-size: 1.2rem;
     }
-    #contactez-nous p{
-        font-size:2rem;
+
+    #contactez-nous p {
+        font-size: 2rem;
     }
-    #contactez-nous h2{
+
+    #contactez-nous h2 {
         font-size: 4rem;
         margin-bottom: 0.5em;
     }
 }
+
+/* End of Breackpoint min 990px */
