@@ -19,6 +19,16 @@
         text-align: center;
         margin:2em 0 1em 0;
     }
+    .title-sm{
+        font-size: 1.8rem;
+        text-align: center;
+        margin:1em 0 1em 0;
+    }
+    .title-xs{
+        font-size: 1.2rem;
+        text-align: center;
+        margin:1em 0 1em 0;
+    }
     .background-stripped{
         background-image:url("../img/background-stripped.png");
         background-size: auto;
@@ -35,6 +45,7 @@
         width:30%;
         padding:1em;
     }
+    
 
 /* Navbar */
 .shadow-nav{
@@ -137,6 +148,9 @@ position: absolute;
         text-align: left;
         font-size: 3em;
     }
+    .title-sm, .title-xs{
+        text-align: left;
+    }
     .icon-nav img{
         max-width: 40px;
         padding:0.2em;
@@ -160,5 +174,4 @@ position: absolute;
         font-size: 4rem;
         margin-bottom: 0.5em;
     }
-    }
-    /* End of Breackpoint min 1024px */
+}
