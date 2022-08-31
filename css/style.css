@@ -1,16 +1,4 @@
-.devR{
-    border: 1px solid red;
-}
-.devB{
-    border: 1px solid blue;
-}
-.devG{
-    border: 1px solid green;
-}
-
-
 /* Global CSS */
-
     h1{
         font-family: 'Bebas Neue', cursive;
         font-weight: 800;
@@ -26,7 +14,6 @@
     nav{
         z-index:9999;
     }
-
     .title{
         font-size: 2.5rem;
         text-align: center;
@@ -38,8 +25,7 @@
         background-size: cover;
         width: 100%;
         min-height: 100%;
-        overflow: hidden;
-        
+        overflow: hidden; 
     }
     .lottie-mobile{
         width:80%;
@@ -54,21 +40,30 @@
 .shadow-nav{
     box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 15%)
 }
+.img-logo{
+    max-width:100px;
+}
 .icon-nav img{
     max-width: 40px;
     padding:0.2em;
-    transition:200ms;
+    transition:200ms;  
 }
 .icon-nav img:hover{
     transform:scale(1.04);
     transition:200ms;
 }
-.img-logo{
-max-width:40%
+.icon-footer img{
+    max-width: 80px;
+    padding:0.2em;
+    transition:200ms;  
+}
+.icon-footer img:hover{
+    transform:scale(1.04);
+    transition:200ms;
 }
 .nav-item a{
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 600;
 }
 /* End of Navbar */
@@ -114,7 +109,7 @@ position: absolute;
     padding-top:0.2em;
 }
 .hero-title h1{
-    font-size:10rem;
+    font-size:5rem;
 }
 /* Ken Burns effect under the hero section*/
 @-webkit-keyframes burns {
@@ -130,24 +125,25 @@ position: absolute;
 /* End of ken Burns */
 /* End of Hero Section */
 
-
-/* Breackpoint max 800px */
-@media screen and (max-width:800px){
-.img-logo{
-    max-width:100px;
-}
-.nav-item a{
-    font-size: 1em;
-}
-.hero-title h1{
-    font-size:5rem;
-}
-}
-/* End of Breackpoint max 800px */
 /* Breackpoint min 1024px */
 @media screen and (min-width:1024px){
+    .img-logo{
+        max-width:40%
+    }
+    .nav-item a{
+        font-size: 1.3em;
+    }
     .title{
         text-align: left;
+        font-size: 3em;
+    }
+    .icon-nav img{
+        max-width: 40px;
+        padding:0.2em;
+        transition:200ms;
+    }
+    .hero-title h1{
+        font-size:10rem;
     }
     .lottie-mobile{
         width: 100%;
